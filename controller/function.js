@@ -1,3 +1,4 @@
+const { json } = require('body-parser')
 var AcmeFilmes = require ('../modulo/filmes')
 
 const getListaFilmes = function(){
@@ -57,8 +58,10 @@ return false
 }
 
 
+
+
 // console.log(getListaFilmes())
-// console.log(getFilmeById(2))
+// console.log(getFilmeById())
 module.exports = {
     getListaFilmes,
     getFilmeById
