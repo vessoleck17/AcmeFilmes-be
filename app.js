@@ -132,7 +132,7 @@ app.get('/v2/ACME_FILMES/filme/:id', cors(), async function(request, response){
     response.json(dadosFilme)
 })
 
-app.post('v2/acmefilmes/filme', cors(), bodyParserJson, async function(request, response){
+app.post('/v2/acmefilmes/filme', cors(), bodyParserJson, async function(request, response){
 
 
     //recebe todos os dados encaminhados na requisição pelo body
